@@ -1,0 +1,14 @@
+[
+    {
+        "indicator": "8.8.8.8",
+        "type": "ip",
+        "score": 95,
+        "level": "Critical"
+    },
+    {
+        "indicator": "malicious-domain.com",
+        "type": "Domain",
+        "score": 85,
+        "level": "Critical"
+    }
+]
