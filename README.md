@@ -119,7 +119,7 @@ python threat_intel_v2.py
 - CSV Export
 - Dark Mode
 - PDF Export
-
+  
 ## Author
 
 Olaoluwa Olokunde
