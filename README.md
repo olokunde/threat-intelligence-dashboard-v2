@@ -114,6 +114,10 @@ python threat_intel_v2.py
 
 ---
 
+## Future Features
+
+- CSV Export
+
 ## Author
 
 Olaoluwa Olokunde
