@@ -117,6 +117,7 @@ python threat_intel_v2.py
 ## Future Features
 
 - CSV Export
+- Dark Mode
 
 ## Author
 
