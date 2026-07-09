@@ -55,8 +55,6 @@ Threat Intelligence Dashboard V2
 
 ## Example output
 
-[screenshot here]
-
 Sample of the exported `threat_report.json`:
 
 ```json
