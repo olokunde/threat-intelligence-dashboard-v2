@@ -35,8 +35,20 @@ def calculate_level(score):
 
 def add_threat():
     indicator = input("Indicator (IP/Domain): ")
-    threat_type = input("Type (IP/Domain): ")
-    score = int(input("Threat Score (1-100): "))
+    threat_type = input("Type (IP/Domain): ").strip()
+    if threat_type.upper() == "IP":
+        threat_type = "IP"
+    else:
+        threat_type = threat_type.capitalize()
+
+    while True:
+        try:
+            score = int(input("Threat Score (1-100): "))
+            if 1 <= score <= 100:
+                break
+            print("Score must be between 1 and 100.")
+        except ValueError:
+            print("Please enter a valid integer.")
 
     level = calculate_level(score)
 
@@ -91,7 +103,13 @@ def search_threat():
 
     if results:
         for record in results:
-            print(record)
+            print(
+                f"ID:{record[0]} | "
+                f"{record[1]} | "
+                f"{record[2]} | "
+                f"Score:{record[3]} | "
+                f"Level:{record[4]}"
+            )
     else:
         print("No results found.")
 
