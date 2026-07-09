@@ -53,52 +53,25 @@ Threat Intelligence Dashboard V2
 6. Exit
 ```
 
----
+## Example output
 
-## Example Use Case
+[screenshot here]
 
-Security analysts can track suspicious:
+Sample of the exported `threat_report.json`:
 
-- IP Addresses
-- Domains
-- Indicators of Compromise (IOCs)
-
-The application assigns threat levels and stores findings for future analysis.
-
----
-
-## Skills Demonstrated
-
-- Python Development
-- SQLite Databases
-- JSON Processing
-- Cybersecurity Analytics
-- Threat Intelligence
-- Data Persistence
-- Security Reporting
-
----
-
-## How to Run
-
-```bash
-python threat_intel_v2.py
+```json
+[
+    {
+        "indicator": "8.8.8.8",
+        "type": "IP",
+        "score": 95,
+        "level": "Critical"
+    }
+]
 ```
 
----
+## What I'd improve next
 
-## Future Improvements
-
-- Threat Intelligence API integration
-- VirusTotal integration
-- AbuseIPDB integration
-- Web dashboard with Flask
-- User authentication
-- Risk trend visualization
-- Threat correlation engine
-
----
-
-## Author
-
-Olaoluwa Olokunde
+- Input validation: reject non-numeric or out-of-range scores instead of crashing
+- Enrich indicators automatically via the AbuseIPDB or VirusTotal API
+- A small Flask web dashboard on top of the same database
